@@ -1,0 +1,26 @@
+.env
+.env.*
+!.env.example
+.dev.vars
+.venv/
+*.egg-info/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+data/
+backups/
+*.db
+*.sqlite
+*.sqlite3
+*.key
+fernet.key
+.python-version
+# local login and credential files
+credentials.json
+*credentials*.json
+.login
+*.login
+id_rsa
+id_ed25519
+*.pem
