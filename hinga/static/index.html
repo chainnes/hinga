@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hinga</title>
+  <meta name="description" content="A private journaling desk. Reflections cite your own notes. Not medical advice.">
+  <meta name="theme-color" content="#e4ebdd">
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css?v=4">
+</head>
+<body>
+  <p class="banner" id="disclaimer" role="note">
+    Not medical advice. Hinga is a journaling desk. It does not diagnose, treat, or replace a clinician or a crisis line.
+  </p>
+  <div id="app" class="app" aria-busy="true">
+    <p class="status">Opening the desk…</p>
+  </div>
+  <noscript>
+    <p class="banner">Hinga needs JavaScript for the desk. The line above still stands: this is not medical advice.</p>
+  </noscript>
+  <script src="/static/app.js?v=4" type="module"></script>
+</body>
+</html>
