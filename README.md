@@ -1,4 +1,6 @@
-# Hinga
+# Mindfulness, Journaling & Habits Assistant
+
+Codename: Hinga
 
 A private journaling desk. Every note goes through a LangGraph path that starts with a safety check. If the note is clear, a shared memory node loads that person's profile and earlier pages, and one branch answers: a short mindfulness script, a journal reflection, a habit note, or a weekly observation.
 
