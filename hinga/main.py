@@ -122,7 +122,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         seed(factory, postgres=postgres, cipher=cipher)
         yield
 
-    app = FastAPI(title="Hinga", lifespan=lifespan)
+    app = FastAPI(title="Mindfulness, Journaling & Habits Assistant", lifespan=lifespan)
     app.state.settings = settings
     app.state.factory = factory
     app.state.postgres = postgres

@@ -75,7 +75,7 @@ function shell() {
       el("div", { class: "brand" }, [
         el("img", { class: "mark", src: "/static/favicon.svg", alt: "" }),
         el("div", {}, [
-          el("h1", {}, ["Hinga"]),
+          el("h1", {}, ["Mindful Habits"]),
           el("p", {}, ["Notes, habits, and a reflection that has to cite your own pages."]),
         ]),
       ]),
@@ -154,7 +154,7 @@ function safetyBlock(payload) {
       ),
     ),
     el("p", { class: "fine" }, [
-      "Lines change. If one does not connect, try the next. Hinga is not an emergency service.",
+      "Lines change. If one does not connect, try the next. This assistant is not an emergency service.",
     ]),
     el("p", { class: "fine" }, [payload.disclaimer]),
   ]);
