@@ -1,12 +1,10 @@
 # Mindfulness, Journaling & Habits Assistant
 
-Codename: Hinga
-
 A private journaling desk. Every note goes through a LangGraph path that starts with a safety check. If the note is clear, a shared memory node loads that person's profile and earlier pages, and one branch answers: a short mindfulness script, a journal reflection, a habit note, or a weekly observation.
 
 This is a personal portfolio build by Charlene Cordero. It follows the public problem statement from the Code Without Barriers (CWB) Hackathon with id8nxt: an AI assistant for mindfulness, journaling, and habit tracking. It is a portfolio implementation of that statement. It was not entered as a submission.
 
-**Hinga is not a medical service and not a crisis service.** It does not diagnose, treat, assess risk, or connect you to a responder. If a note matches the crisis phrase list, the app stops and returns one fixed message. That message contains the token `<HELPLINE_PLACEHOLDER>`. The token is not a phone number. Replace it with a real Philippines helpline, checked against that organization's own listing, before any public demo. Do not leave the placeholder in a demo other people can open.
+**This assistant is not a medical service and not a crisis service.** It does not diagnose, treat, assess risk, or connect you to a responder. If a note matches the crisis phrase list, the app stops and returns one fixed message. That message contains the token `<HELPLINE_PLACEHOLDER>`. The token is not a phone number. Replace it with a real Philippines helpline, checked against that organization's own listing, before any public demo. Do not leave the placeholder in a demo other people can open.
 
 ## Architecture
 
@@ -153,7 +151,7 @@ The desk you can click through is the slice. These are not in this repo:
 
 ## CV description
 
-Hinga is a LangGraph journaling desk I built in Python. Every note hits a deterministic safety check before any model call; crisis language gets one fixed response with a helpline placeholder and is never diagnosed or analyzed. Clear notes pass through a shared memory node, a short profile plus retrieval over that person's own entries, and then one branch: a timed mindfulness script, a schema-checked journal reflection, habit streaks with a guilt-free miss line and smaller wording after repeated misses, or a weekly observation. If a model reply fails the schema twice, the note is kept and marked unanalyzed. Journal text is sealed with Fernet, isolated per person, and can be exported or deleted. It runs with no API key. The offline embedder is lexical, sign-in is a demo cookie for two fictional people, and the helpline token has to be replaced before a public demo.
+Mindfulness, Journaling & Habits Assistant is a LangGraph journaling desk I built in Python. Every note hits a deterministic safety check before any model call; crisis language gets one fixed response with a helpline placeholder and is never diagnosed or analyzed. Clear notes pass through a shared memory node, a short profile plus retrieval over that person's own entries, and then one branch: a timed mindfulness script, a schema-checked journal reflection, habit streaks with a guilt-free miss line and smaller wording after repeated misses, or a weekly observation. If a model reply fails the schema twice, the note is kept and marked unanalyzed. Journal text is sealed with Fernet, isolated per person, and can be exported or deleted. It runs with no API key. The offline embedder is lexical, sign-in is a demo cookie for two fictional people, and the helpline token has to be replaced before a public demo.
 
 ## Status / limitations
 
